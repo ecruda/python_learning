@@ -15,7 +15,7 @@ Method is when a function is a part of an object or Python class
 	To call a method, input obj_name.method(arg), eg.
 
 		car.readspeed()
-		car.incspeed(4
+		car.incspeed(40)
 
 Object is a collection of data and methods that operate on that data. Objects are also defined by a class
 
