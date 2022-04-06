@@ -4,16 +4,19 @@ class Car:
 	speed = 0
 	started = False
 
+	def __init__(self, name):
+		self.name = name
+
 	#start the car
 	def start(self):
 		self.started = True
-		print("Car started")
+		print(self.name + " started")
 
 	#increase speed, cannot be increased unless car is started
 	def inc_speed(self, delta):
 		if self.started:
 			self.speed = self.speed + delta
-			print("Speed is now " + str(self.speed))
+			print(self.name + " speed is now " + str(self.speed))
 
 		else:
 			print("Must start car first")
@@ -22,7 +25,7 @@ class Car:
 	def dec_speed(self, delta):
 		if self.started:
 			self.speed = self.speed - delta
-			print("Speed is now " + str(self.speed))
+			print(self.name + " speed is now " + str(self.speed))
 
 		else:
 			print("Must start car first")
@@ -30,4 +33,4 @@ class Car:
 	#stops car
 	def stop(self):
 		self.speed = 0
-		print("Stopped")
+		print(self.name + " stopped")
