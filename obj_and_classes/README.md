@@ -19,7 +19,7 @@ Method is when a function is a part of an object or Python class
 
 Object is a collection of data and methods that operate on that data. Objects are also defined by a class
 
-	To create an object, input obj_name = obj_class(), eg.
+	To create an object, input obj_name = obj_class(), , this is also called a constructor eg.
 		
 		car1 = Car()
 		car2 = Car()
@@ -51,7 +51,8 @@ To make a class pass arguments through it, use the __init__() function:
 				print(self.var1 + "blah")
 				#method1 actions
 
-To include other files, use import <filename> at the top, depends on file path
+To include other files, use import "
+filename" at the top, depends on file path
 
 
 
